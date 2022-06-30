@@ -2,6 +2,7 @@
 vgg is backbone network to extract features
 1. vgg + rfb + mlp
 2. vgg + ViT + mlp
+3. focal loss is implemented and used in models above to make training more efficient on imbalanced dataset
 - input image is processed with ROI mask
 
 
