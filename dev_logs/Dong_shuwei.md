@@ -42,3 +42,17 @@
 - 今天将剩下的4张原型图绘制完毕，至此关于自己设想的APP的11张原型图已经绘制完毕，对于原型图的绘制也有了一个比较熟练的掌握。
 - 接下来在今天我又学习了结构图和流程图的画法，还是在网上寻找教程学习，结构图使用的是Xmind进行绘制，流程图的话使用的是web端的ProcessOn。
 
+## 2022.6.30
+
+- 今天我在昨天学习流程图和结构图绘制的基础上，自己尝试绘制了一些软件的系统流程图和功能结构图，掌握了流程图和结构图的绘制方法。
+- 学习特征工程的相关知识，为我们项目对数据集进行特征提取和特征选择，了解了一些颜色提取的方法，包括颜色直方图，颜色相关图等。
+
+## 2022.7.1
+
+- 阅读论文《基于扇区邻域特征工程的玻璃封装绝缘端子缺陷检测》，了解到了缺陷检测的特征工程的方法。阅读进度百分之五十。
+- 论文链接：https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDAUTO&filename=DZYX202205005&uniplatform=NZKPT&v=OBbwn4s_s_BoZd5GgmYNeM0Zhj1Dc2wht2bnqNSn8MCanMDHEE-3L8H2R_JAucWT
+
+## 2022.7.2
+
+- 阅读论文《基于扇区邻域特征工程的玻璃封装绝缘端子缺陷检测》，深度了解了深度学习方法处理工业缺陷品的常用方法，包括预处理、粗分类、计算灰度变化率、计算反光特征、方向统计特征等等。
+- 论文链接：https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDAUTO&filename=DZYX202205005&uniplatform=NZKPT&v=OBbwn4s_s_BoZd5GgmYNeM0Zhj1Dc2wht2bnqNSn8MCanMDHEE-3L8H2R_JAucWT
