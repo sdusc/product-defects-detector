@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>工业品检测</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <!-- 头部 -->
+    <header>
+      <h1>工业品检测</h1>
+      <div class="show-time"></div>
+      <script>
+        var t = null;
+        t = setTimeout(time, 1000); //开始运行
+        function time() {
+          clearTimeout(t); //清除定时器
+          dt = new Date();
+          var y = dt.getFullYear();
+          var mt = dt.getMonth() + 1;
+          var day = dt.getDate();
+          var h = dt.getHours(); //获取时
+          var m = dt.getMinutes(); //获取分
+          var s = dt.getSeconds(); //获取秒
+          document.querySelector(".show-time").innerHTML =
+            "当前时间：" +
+            y +
+            "年" +
+            mt +
+            "月" +
+            day +
+            "日-" +
+            h +
+            "时" +
+            m +
+            "分" +
+            s +
+            "秒";
+          t = setTimeout(time, 1000); //设定定时器，循环运行
+        }
+      </script>
+    </header>
+
+    <!-- 页面主体 -->
+    <section class="mainbox">
+
+      <!-- 中间盒子 -->
+      <div class="column">
+
+        <div class="map" id="neon-btn">
+          <div class="map1"></div>
+          <div class="map2"></div>
+          <div class="map3"></div>
+          <button class="btn one" onclick="driverUpload();">点击上传</button>
+          <input style="display: none" type="file" onchange="showImg()" id="img_file">
+          <img src="" alt="" id="img_id" class="img" style="width: 500px">
+          <button class="btn two">开始检测</button>
+          <button class="btn three">查看报告</button>
+
+        </div>
+      </div>
+
+
+    </section>
+
+    <script src="js/flexible.js"></script>
+
+  </body>
+</html>
