@@ -1,0 +1,98 @@
+# 7.2
+
+- 由于缺陷检测只需要关注螺丝的部分，因此尝试闭操作后加上一步开操作，然后统计符合面积范围的点的个数，由此判断是否不完整，效果比前几种方法好很多，该功能基本实现：
+
+  <img src="C:\Users\xxn\AppData\Roaming\Typora\typora-user-images\image-20220702102250074.png" alt="image-20220702102250074" style="zoom:50%;" /><img src="C:\Users\xxn\AppData\Roaming\Typora\typora-user-images\image-20220702102339064.png" alt="image-20220702102339064" style="zoom:50%;" /><img src="C:\Users\xxn\AppData\Roaming\Typora\typora-user-images\image-20220702102508271.png" alt="image-20220702102508271" style="zoom:50%;" /><img src="C:\Users\xxn\AppData\Roaming\Typora\typora-user-images\image-20220702102434792.png" alt="image-20220702102434792" style="zoom:50%;" />
+
+# 7.1
+
+- 根据前两种方法的尝试，认为问题出现在检测到的边缘不够连续，造成很多微小的连通域影响判断，因此在选择矩形前增加了对图像的闭操作，获得了比之前更好的效果。
+
+- <img src="C:\Users\xxn\AppData\Roaming\Typora\typora-user-images\image-20220702092056088.png" alt="image-20220702092038547" style="zoom:80%;" /><img src="C:\Users\xxn\AppData\Roaming\Typora\typora-user-images\image-20220702092113218.png" alt="image-20220702092113218" style="zoom:80%;" />
+
+- 但是存在问题：对于不完整但不影响整体判断的图像识别有误
+
+  <img src="C:\Users\xxn\AppData\Roaming\Typora\typora-user-images\image-20220702101753645.png" alt="image-20220702101753645" style="zoom: 50%;" />
+
+  
+
+# 6.30
+
+- 对图像进行二值化->提取图像中的直线->判断两直线夹角余弦，但是同样提取的直线是断断续续的，效果也不好。由于图片画质因素，很多看似是直线的也未检测出是直线，还有许多散碎的直线并没有连接成长线，此外还有很多噪声直线。
+
+<img src="C:\Users\xxn\AppData\Roaming\Typora\typora-user-images\image-20220702104504302.png" alt="image-20220702104504302" style="zoom:50%;" /><img src="C:\Users\xxn\AppData\Roaming\Typora\typora-user-images\image-20220702104435764.png" alt="image-20220702104435764" style="zoom:50%;" />
+
+
+
+# 6.29
+
+- 识别不完整图像：对图像进行二值化->提取图像边缘->定位四边形->判断两两相邻直线夹角余弦是否在90°左右。但是效果不好，并没有识别出整体的工件边缘。
+
+  ![image-20220702091723770](C:\Users\xxn\AppData\Roaming\Typora\typora-user-images\image-20220702091723770.png)
+
+
+
+# 6.28
+
+- 开组会，明确下一步工作方向：对图像添加噪声。由于我们现在的图像都是质量很好的图像，所以尽管当前的训练很好，但是模型的鲁棒性可能不高。
+- 考虑给图像过曝、过暗、添加噪声（高斯、椒盐等）
+- 开会时老师也建议我们对于缺角的图像识别后可以给用户一个反馈，考虑可以使用图像处理的方式。
+
+
+
+# 6.27
+
+- 学习tensorflow
+
+  
+
+# 6.26
+
+- 考虑到老师开会时所说可以记录不同缺陷类型的组件数量，以便更加直观的反馈。由此除了基本版本外，还设计了可视化的界面，后续时间充裕的话尝试实现。（图中数据非实际开发中的数据，仅供展示使用）
+
+![image-20220702090157083](C:\Users\xxn\AppData\Roaming\Typora\typora-user-images\image-20220702090157083.png)
+
+
+
+# 6.25
+
+- 实现web前端css代码编写
+
+![image-20220702090147563](C:\Users\xxn\AppData\Roaming\Typora\typora-user-images\image-20220702090147563.png)
+
+![image-20220702090210870](C:\Users\xxn\AppData\Roaming\Typora\typora-user-images\image-20220702090210870.png)
+
+# 6.24
+
+- 设计web前端CSS原型
+
+# 6.23
+
+- 和同学沟通后，决定使用旋转、反转的方式进行数据增强，将数据增加至原来的6倍
+- 由于训练网络的同学反馈当前数据训练效果很好，因此暂不考虑小样本训练和GAN生成图像
+
+
+
+# 6.22
+
+- 统计图像类别：class：one 1（13个）；neighbor_two 2（18个）；diagonal_two 3（20个）；three 4（22个）；four 5（14个）；good 6（17个）；imperfect 7（13个）
+
+- 完成初步数据分类、旋转和格式转换等操作
+
+- 和负责搭建网络的同学进行沟通明确具体处理数据的方向
+
+- 针对样本过少的问题提出三种解决思路：通过神经网络进行图像生成、转化为小样本问题、通过图像处理技术生成图片。
+
+- 阅读有关小样本方面的论文以及源码，Jake Snell, Kevin Swersky, and Richard Zemel. Prototypical networks for few-shot learning. In NeurIPS, pages 4077–4087, 2017.了解了小样本流程，发现处理方法有可取之处但也有不匹配我们问题的地方。
+
+- 原型网路：
+
+  代码地址：[yinboc/prototypical-network-pytorch: A re-implementation of "Prototypical Networks for Few-shot Learning" (github.com)](https://github.com/yinboc/prototypical-network-pytorch)
+
+  论文原文：[[1703.05175\] Prototypical Networks for Few-shot Learning (arxiv.org)](https://arxiv.org/abs/1703.05175#:~:text=Prototypical networks learn a metric space in which,in this limited-data regime%2C and achieve excellent results.)
+
+# 6.21
+
+- 开会中明确了项目目标、角色和项目技术点
+- 小组讨论时确定我在算法组，主要负责数据处理相关工作。
+
