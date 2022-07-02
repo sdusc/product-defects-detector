@@ -1,18 +1,13 @@
 # 7.2
 
-- 由于缺陷检测只需要关注螺丝的部分，因此尝试闭操作后加上一步开操作，然后统计符合面积范围的点的个数，由此判断是否不完整，效果比前几种方法好很多，该功能基本实现：
-
-  <img src="C:\Users\xxn\AppData\Roaming\Typora\typora-user-images\image-20220702102250074.png" alt="image-20220702102250074" style="zoom:50%;" /><img src="C:\Users\xxn\AppData\Roaming\Typora\typora-user-images\image-20220702102339064.png" alt="image-20220702102339064" style="zoom:50%;" /><img src="C:\Users\xxn\AppData\Roaming\Typora\typora-user-images\image-20220702102508271.png" alt="image-20220702102508271" style="zoom:50%;" /><img src="C:\Users\xxn\AppData\Roaming\Typora\typora-user-images\image-20220702102434792.png" alt="image-20220702102434792" style="zoom:50%;" />
+- 由于缺陷检测只需要关注螺丝的部分，因此尝试闭操作后加上一步开操作，然后统计符合面积范围的点的个数，由此判断是否不完整，效果比前几种方法好很多，该功能基本实现。
 
 # 7.1
 
 - 根据前两种方法的尝试，认为问题出现在检测到的边缘不够连续，造成很多微小的连通域影响判断，因此在选择矩形前增加了对图像的闭操作，获得了比之前更好的效果。
 
-- <img src="C:\Users\xxn\AppData\Roaming\Typora\typora-user-images\image-20220702092056088.png" alt="image-20220702092038547" style="zoom:80%;" /><img src="C:\Users\xxn\AppData\Roaming\Typora\typora-user-images\image-20220702092113218.png" alt="image-20220702092113218" style="zoom:80%;" />
-
 - 但是存在问题：对于不完整但不影响整体判断的图像识别有误
 
-  <img src="C:\Users\xxn\AppData\Roaming\Typora\typora-user-images\image-20220702101753645.png" alt="image-20220702101753645" style="zoom: 50%;" />
 
   
 
@@ -20,15 +15,12 @@
 
 - 对图像进行二值化->提取图像中的直线->判断两直线夹角余弦，但是同样提取的直线是断断续续的，效果也不好。由于图片画质因素，很多看似是直线的也未检测出是直线，还有许多散碎的直线并没有连接成长线，此外还有很多噪声直线。
 
-<img src="C:\Users\xxn\AppData\Roaming\Typora\typora-user-images\image-20220702104504302.png" alt="image-20220702104504302" style="zoom:50%;" /><img src="C:\Users\xxn\AppData\Roaming\Typora\typora-user-images\image-20220702104435764.png" alt="image-20220702104435764" style="zoom:50%;" />
-
 
 
 # 6.29
 
 - 识别不完整图像：对图像进行二值化->提取图像边缘->定位四边形->判断两两相邻直线夹角余弦是否在90°左右。但是效果不好，并没有识别出整体的工件边缘。
 
-  ![image-20220702091723770](C:\Users\xxn\AppData\Roaming\Typora\typora-user-images\image-20220702091723770.png)
 
 
 
@@ -48,9 +40,7 @@
 
 # 6.26
 
-- 考虑到老师开会时所说可以记录不同缺陷类型的组件数量，以便更加直观的反馈。由此除了基本版本外，还设计了可视化的界面，后续时间充裕的话尝试实现。（图中数据非实际开发中的数据，仅供展示使用）
-
-![image-20220702090157083](C:\Users\xxn\AppData\Roaming\Typora\typora-user-images\image-20220702090157083.png)
+- 考虑到老师开会时所说可以记录不同缺陷类型的组件数量，以便更加直观的反馈。由此除了基本版本外，还设计了可视化的界面，后续时间充裕的话尝试实现。
 
 
 
@@ -58,9 +48,6 @@
 
 - 实现web前端css代码编写
 
-![image-20220702090147563]([C:\Users\xxn\AppData\Roaming\Typora\typora-user-images\image-20220702090147563.png](http://m.qpic.cn/psc?/V52URkvn3nXdip3Kufrk0JBAN433EeiB/bqQfVz5yrrGYSXMvKr.cqU6rEtXo.loEfpt9qY2B94253ToDFJi6.BKf4VfOLHgVVKOZ812O7L.3cX6ppbUvDmjKQlauWXjR9Chopf4Po0w!/b&bo=WgImAQAAAAADB10!&rf=viewer_4))
-
-![image-20220702090210870]([C:\Users\xxn\AppData\Roaming\Typora\typora-user-images\image-20220702090210870.png](http://m.qpic.cn/psc?/V52URkvn3nXdip3Kufrk0JBAN433EeiB/bqQfVz5yrrGYSXMvKr.cqfEt4QL2H6xKa4orgNyh.OgPMbcZpxw2hApI.Ty5D307C0g3WzjG7t0ORCTnd9qEqFQBjfcDAZrOa0lm5awN2Qk!/b&bo=WAIlAQAAAAADB1w!&rf=viewer_4))
 
 # 6.24
 
@@ -87,9 +74,9 @@
 
 - 原型网路：
 
-  代码地址：[yinboc/prototypical-network-pytorch: A re-implementation of "Prototypical Networks for Few-shot Learning" (github.com)](https://github.com/yinboc/prototypical-network-pytorch)
+  代码地址：(https://github.com/yinboc/prototypical-network-pytorch)
 
-  论文原文：[[1703.05175\] Prototypical Networks for Few-shot Learning (arxiv.org)](https://arxiv.org/abs/1703.05175#:~:text=Prototypical networks learn a metric space in which,in this limited-data regime%2C and achieve excellent results.)
+  论文原文：(https://arxiv.org/abs/1703.05175#:~:text=Prototypical networks learn a metric space in which,in this limited-data regime%2C and achieve excellent results.)
 
 # 6.21
 
