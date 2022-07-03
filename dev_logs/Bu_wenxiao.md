@@ -24,7 +24,8 @@
 - 绘制项目流程图(见README.md)
 
 ## 2022-6-27
-- 
+- 阅读论文: Will You Ever Become Popular? Learning to Predict Virality of Dance Clips
+Jiahao Wang, Yunhong Wang, Nina Weng, Tianrui Chai, Annan Li, Faxi Zhang, Sansi Yu. ACM Transactions on Multimedia Computing, Communications, and Applications Volume 18 Issue 2
 
 ## 2022-6-28
 - 尝试使用Andriod Studio开发安卓端App
