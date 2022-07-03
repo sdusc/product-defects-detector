@@ -27,6 +27,7 @@
 ---
 #### 6月26日
 编写README文档
+
 读论文Focal Loss for Dense Object Detection
 实现focal loss,并使用现有模型进行训练
 
