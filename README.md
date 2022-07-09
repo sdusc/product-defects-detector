@@ -20,7 +20,7 @@
 
 ## 使用说明
 以web端为例，操作流程如下图所示：
-![XN{IO@BY3T0GA~EOT_N%}GC](https://user-images.githubusercontent.com/54212686/178097769-605cbe3d-c904-4d87-b37c-e5e03b9084f7.png)
+![image](https://user-images.githubusercontent.com/54212686/178099842-d573514f-37d1-40bf-a186-051f2b6eed35.png)
 
 
 ## 程序结构
