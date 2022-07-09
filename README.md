@@ -19,6 +19,9 @@
 - 将训练完成的模型部署在DevCloud运行
 
 ## 使用说明
+以web端为例，操作流程如下图所示：
+![XN{IO@BY3T0GA~EOT_N%}GC](https://user-images.githubusercontent.com/54212686/178097769-605cbe3d-c904-4d87-b37c-e5e03b9084f7.png)
+
 
 ## 程序结构
 
