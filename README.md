@@ -10,7 +10,7 @@
 
 项目记录博客地址：https://blog.csdn.net/xueyehuilang
 
-小组会议记录：
+小组会议记录：已上传至Conference_Record.md
 
 ## 技术路线
 
