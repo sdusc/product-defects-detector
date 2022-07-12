@@ -24,8 +24,8 @@
 
 
 ## 程序结构
+![工业品组装缺陷检测](https://user-images.githubusercontent.com/54212686/178399368-33a90ff1-1507-4434-ad41-8a023194de8a.png)
 
-Loading
 
 ## 开发计划
 
