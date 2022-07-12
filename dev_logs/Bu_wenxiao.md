@@ -36,7 +36,7 @@ Jiahao Wang, Yunhong Wang, Nina Weng, Tianrui Chai, Annan Li, Faxi Zhang, Sansi 
 - 阅读Electron文档，了解Electron开发所需的技术，决定先快速学习Node.js
 
 ## 2022-06-30
-- 绘制WBS工作结构分解图
+- 绘制WBS工作结构分解图（后改用董书玮绘制的程序结构图）
 - 毛概考试
 
 ## 2022-07-01
@@ -44,7 +44,7 @@ Jiahao Wang, Yunhong Wang, Nina Weng, Tianrui Chai, Annan Li, Faxi Zhang, Sansi 
 
 ## 2022-07-02
 - 与小组成员沟通，制作会议记录和中期答辩ppt
-- 完成、上传Conference_Record.md
+- 补充、上传Conference_Record.md
 - 整合中期答辩ppt
 
 (因笔记本突发硬盘损坏，正在维修，部分日志使用其他队员的账号上传)
@@ -58,3 +58,19 @@ Jiahao Wang, Yunhong Wang, Nina Weng, Tianrui Chai, Annan Li, Faxi Zhang, Sansi 
 - 创建Electron入门应用
 
 ## 2022-07-05
+- 改用React开发安卓App
+- 学习React Native
+
+## 2022-07-06
+- 学习React Native
+- 编写用于试验的项目代码
+
+## 2022-07-08
+- 编写React Native项目代码
+
+## 2022-07-09
+- 查阅HBuilderX使用方法
+- 使用HBuilderX将React项目转为安卓App，成功
+
+## 2022-07-11
+- 完善README.md文档
