@@ -67,10 +67,23 @@ Jiahao Wang, Yunhong Wang, Nina Weng, Tianrui Chai, Annan Li, Faxi Zhang, Sansi 
 
 ## 2022-07-08
 - 编写React Native项目代码
-
-## 2022-07-09
 - 查阅HBuilderX使用方法
 - 使用HBuilderX将React项目转为安卓App，成功
 
+## 2022-07-09
+- 配置TensorFlow运行环境
+- 使用Tensorflow重新训练模型
+
 ## 2022-07-11
 - 完善README.md文档
+
+## 2022-07-12
+- 前端开发，修改前端样式
+
+## 2022-07-13
+- 汇总项目工作情况
+- 调试前后端，制作答辩ppt
+
+## 2022-07-14
+- 修改、完善答辩ppt
+- 写个人工作总结
