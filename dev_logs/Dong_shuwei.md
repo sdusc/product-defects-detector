@@ -54,8 +54,7 @@
 
 ## 2022.7.2
 
-- 阅读论文《基于扇区邻域特征工程的玻璃封装绝缘端子缺陷检测》，深度了解了深度学习方法处理工业缺陷品的常用方法，包括预处理、粗分类、计算灰度变化率、计算反光特征、方向统计特征等等。
-- 论文链接：https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDAUTO&filename=DZYX202205005&uniplatform=NZKPT&v=OBbwn4s_s_BoZd5GgmYNeM0Zhj1Dc2wht2bnqNSn8MCanMDHEE-3L8H2R_JAucWT
+- 准备中期答辩：制作中期答辩ppt，准备中期答辩材料，提供中期答辩的个人工作总结
 
 ## 2022.7.4
 
