@@ -1,0 +1,54 @@
+<!--index.wxml-->
+<button bindtap="chooseimage_cloud" style="width :80%">拍摄或选择您要检测的物件图片</button>  
+
+<view class="demo1">
+<text decode="{{true}}">您上传的图片:</text>
+</view>
+
+<image src="{{tempFilePaths }}" mode="aspectFit" style="width: 100%; height: 450rpx"/>  
+<!-- <button bindtap="postInfo">POST方法测试</button> -->
+
+<view class="demo">
+<text decode="{{true}}">检测结果:{{result}}&ensp;&ensp;&ensp;预处理时间:{{pre_time}}ms&ensp;&ensp;&ensp;推理时间:{{detect_time}}ms</text>
+</view>
+
+<!-- <view class="demo1">
+<text decode="{{true}}">标注后的图片:</text>
+</view> -->
+
+<!-- 
+<image src="https://t54897w513.goho.co/image" mode="aspectFit" style="width: 100%; height: 450rpx"/>   -->
+<!-- <image src="{{cloudPath}}" mode="aspectFit" style="width: 100%; height: 450rpx"/> -->
+
+
+
+
+
+
+
+
+
+
+<!-- 下面这部分是微信小程序自带的欢迎页面，无需在意，如果想要简洁一些的话可以直接删除 -->
+<!-- <view class="container">
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
