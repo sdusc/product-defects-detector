@@ -1,18 +1,20 @@
+# 7.15
+
+- 写工作总结报告
+
 # 7.14
 
-- 和指导老师进行模拟答辩，对工作已进行改进
+- 和指导老师进行模拟答辩，对工作进行改进
 
 - 调整项目样式，最终效果如图
 
-  ![image-20220714151615038](https://raw.githubusercontent.com/FRYBCDL/test1/master/test1/image-20220714151615038.png)
+  ![image-20220716083216259](https://raw.githubusercontent.com/FRYBCDL/test1/master/test1/image-20220716083216259.png)
 
-  ![image-20220714151722658](https://raw.githubusercontent.com/FRYBCDL/test1/master/test1/image-20220714151722658.png)
+  ![image-20220716083323407](https://raw.githubusercontent.com/FRYBCDL/test1/master/test1/image-20220716083323407.png)
 
-  ![image-20220714151741281](https://raw.githubusercontent.com/FRYBCDL/test1/master/test1/image-20220714151741281.png)
+  ![image-20220716083358176](https://raw.githubusercontent.com/FRYBCDL/test1/master/test1/image-20220716083358176.png)
 
-  ![image-20220714151834146](https://raw.githubusercontent.com/FRYBCDL/test1/master/test1/image-20220714151834146.png)
-
-  ![image-20220714151859974](https://raw.githubusercontent.com/FRYBCDL/test1/master/test1/image-20220714151859974.png)
+  
 
 
 
